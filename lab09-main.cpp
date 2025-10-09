@@ -8,13 +8,14 @@ void testRotate(ArrayStack<T>*);
 int main() {
     // create a stack of 10 integers
     ArrayStack<int> stackA(10);
+    cout<<"hi";
 
     for (int i = 0; i < stackA.getMaxSize(); i++) {
         stackA.push(i);
         cout << stackA.peek() << ' ';
     }
 
-    // ensure that stack A is now full
+    // // ensure that stack A is now full
     if (stackA.isFull()) {
         cout << "Stack A is full! ";
     }
@@ -22,7 +23,7 @@ int main() {
         cout << "Stack A is not full [ERROR] ";
     }
 
-    // create a copy of stack A using the copy constructor
+     // create a copy of stack A using the copy constructor
     ArrayStack<int> stackB = stackA;
 
     // check their lengths
@@ -61,8 +62,8 @@ int main() {
     // create an empty stack
     ArrayStack<int> stackC;
 
-    // try popping from stack C
-    // should display error
+   // try popping from stack C
+    //should display error
     try {
         stackC.pop();
     }
@@ -80,14 +81,14 @@ int main() {
         cout << e;
     }
 
-    // create a copy of stack A using the assignment overload
+    // // create a copy of stack A using the assignment overload
     stackC = stackA;
 
     // check their lengths
     cout << "Stack A length: " << stackA.getLength();
     cout << "Stack C length: " << stackC.getLength();
 
-    // terminate
+   // terminate
     return 0;
 }
 
