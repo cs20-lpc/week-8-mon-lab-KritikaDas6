@@ -86,7 +86,7 @@ T ArrayStack<T>::peek() const {
 template <typename T>
 void ArrayStack<T>::pop() {
     if(this->length==0){
-        throw ("pop. Stack is empty, cannot pop element.\n");
+        throw string("pop. Stack is empty, cannot pop element.\n");
     }
     this->length--;
 
